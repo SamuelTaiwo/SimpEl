@@ -2,4 +2,4 @@ package com.example.annotations
 
 @Target(AnnotationTarget.CLASS)
 @Retention(AnnotationRetention.SOURCE)
-annotation class Encapsulate
+annotation class ServiceGenerator

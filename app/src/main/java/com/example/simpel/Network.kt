@@ -16,5 +16,9 @@ class Network {
         .addCallAdapterFactory(coroutineCallAdapterFactory)
         .build()
     val trackService = retrofit.create(LastFmNetworkService::class.java)
+
+    companion object {
+        const val BASE_URL = "http://ws.audioscrobbler.com/"
+    }
 }
 
