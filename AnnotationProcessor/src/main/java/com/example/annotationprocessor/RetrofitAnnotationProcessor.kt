@@ -16,6 +16,8 @@ import javax.tools.Diagnostic
 @AutoService(Processor::class)
 class RetrofitAnnotationProcessor : AbstractProcessor(){
 
+    val beef: String by lazy { "hello" }
+
     companion object {
         const val KAPT_KOTLIN_GENERATED_OPTION_NAME = "kapt.kotlin.generated"
         val stringClassName = String::class.asClassName()
